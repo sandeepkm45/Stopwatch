@@ -1,6 +1,6 @@
 # Stopwatch
 
-A beautiful, responsive web-based stopwatch application with a modern dark theme and comprehensive timing features. Built with vanilla HTML, CSS, and JavaScript - no dependencies required.
+A beautiful, responsive web-based stopwatch application with a modern dark theme and comprehensive timing features. Built with HTML, CSS, and JavaScript - no dependencies required.
 
 ## ✨ Features
 
