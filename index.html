@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Stopwatch</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="icon-container">
+                <div class="stopwatch-icon" id="stopwatchIcon">
+                    <div class="crown"></div>
+                    <div class="tick tick-12"></div>
+                    <div class="tick tick-3"></div>
+                    <div class="tick tick-6"></div>
+                    <div class="tick tick-9"></div>
+                    <div class="center-dot"></div>
+                </div>
+            </div>
+            <h1 class="title">Stopwatch</h1>
+            <p class="subtitle">Simple & Precise Timing</p>
+        </div>
+
+        <div class="display">
+            <div class="time" id="timeDisplay">00:00:00:00</div>
+            <div class="milliseconds" id="millisecondsDisplay">00</div>
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-start" id="startBtn">Start</button>
+            <button class="btn btn-stop" id="stopBtn" disabled>Stop</button>
+            <button class="btn btn-lap" id="lapBtn" disabled>Lap</button>
+            <button class="btn btn-reset" id="resetBtn">Reset</button>
+        </div>
+
+        <div class="lap-section">
+            <div class="lap-header">
+                <h3 class="lap-title">Lap Data</h3>
+                <button class="export-btn" id="exportBtn" onclick="exportData()">Export Data</button>
+            </div>
+            
+            <div class="lap-data" id="lapData">
+                <div class="no-data">No lap data recorded</div>
+            </div>
+
+            <div class="stats" id="stats" style="display: none;">
+                <div class="stat">
+                    <div class="stat-label">Total Laps</div>
+                    <div class="stat-value" id="totalLaps">0</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-label">Best Lap</div>
+                    <div class="stat-value" id="bestLap">--:--:--</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-label">Average</div>
+                    <div class="stat-value" id="avgLap">--:--:--</div>
+                </div>
+                <!-- <div id="sta" class="stat">
+                    <div class="stat-label">Total Time</div>
+                    <div class="stat-value" id="totalTime">00:00:00</div>
+                </div> -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
